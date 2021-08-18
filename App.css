@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+
+.DC_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem
+}
+
+@media only screen and (max-width: 1000px) {
+  .DC_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem
+  }
+  
+}
+
+.C_container{
+  margin: 20px;
+  background-color: snow;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.C_container:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardUpper{
+  padding-bottom: 40px;
+  
+}
+
+
+.cardUpper >div{
+  font-weight: 750;
+  font-size: 3rem;
+  border-bottom: solid grey 2px;
+  padding-bottom: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.stext{
+  font-size: 1rem;
+}
+
+.cardUpper >h2{
+  color: rgb(153, 149, 149);
+}
+
+.cardLower >ul >li{
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+.Card_button{
+  background-color:#33AEFF;
+  border-radius: 20px ;
+  text-align: center;
+  color: azure;
+  padding : 1rem;
+  margin: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.C_container:hover .Card_button{
+  background-color:#0062E6 ;
+}
